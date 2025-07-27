@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/d6c5b68401.js" crossorigin="anonymous"></script>
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind customization cdn -->
     <script>
         tailwind.config = {
             theme: {
@@ -24,10 +25,45 @@
             }
         }
     </script>
+    <!-- google font css style -->
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
 </head>
 
-<body>
-
+<body class="manrope-font">
+    <main class="container mx-auto px-3 md:px-5 lg:px-6 mt-6 md:mt-10 lg:mt-12 xl:mt-14">
+        <header class="lg:flex lg:justify-between">
+            <!-- text content -->
+            <div class="max-w-2xl lg:flex-1">
+                <h1 class="xl:text-[80px] text-6xl sm:text-7xl font-extrabold text-[black]">It's good<br>
+                    tea time at The<br>Tea House</h1>
+                <p class="text-lg font-medium text-[#707070] w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="px-5 py-4 text-[white] text-xl font-bold bg-gradient-to-r from-orange-500 to-red-500 rounded-xl mt-7">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+            </div>
+            <!-- Image content -->
+            <div class="max-w-2xl relative mx-auto lg:mx-0 lg:flex-1">
+                <!-- image div -->
+                <div>
+                    <img class="w-full" src="images/banner.png" alt="">
+                </div>
+                <!-- card div -->
+                <div class="flex items-center gap-3 bg-[white] rounded-xl drop-shadow-xl px-4 sm:px-7 py-3 sm:py-5 absolute -mt-20 sm:-mt-28 ml-20">
+                    <div>
+                        <i class="fa-solid fa-star text-xl sm:text-5xl text-[#f3c11b]"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-[black] font-extrabold text-xl sm:text-3xl">5.00</h4>
+                        <p class="text-base font-semibold text-[#615959]">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
 </body>
 
 </html>
